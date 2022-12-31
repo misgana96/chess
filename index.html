@@ -3,11 +3,12 @@
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./styles.css">
+        <script src="./index.js"></script>
     </head>
     <body>
         <div class="container">
             <div class="row">
-                <div class="container-header">
+                <div class="container-header shadow-lg">
                     <div class="col-5">
                         <div class="logo">
                             <h1>PARTICULA</h1>
@@ -54,8 +55,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="hero-bottom">
-                    <i class="fa fa-close close-icon"></i>
+                <div class="hero-bottom" id="closeable" style="display: block;">
+                    <i type="button" class="fa fa-close close-icon" onclick="deleteFun()"></i>
                     <div class="row">
                         <div class="col-9">
                             <div class="hero-bottom-text">
@@ -131,8 +132,52 @@
                     </div>
                 </div>
                 <div class="section">
-
+                    <img src="./image/chess.png" alt="">
                 </div>
+                <div class="hero-bottom">
+                    <i class="fa fa-close close-icon"></i>
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="hero-bottom-text">
+                                <span><h3>KICKSTARTER Backers enjoy more. GoChess launch soon to come!</h3></span>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="button">
+                                <button>Get notified</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-with-img">
+                    <div class="row">
+                        <div class="col-6"></div>
+                        <div class="col-6">
+                            <div class="whole_new_way">
+                                <span>
+                                    <h2>A Whole new way to play chess</h2>
+                                    <h5>Learn, Play, compete and outsmart to checkmate online or offline, virtual or in real life.</h5>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-bottom">
+                    <i class="fa fa-close close-icon" @click="close(e)"></i>
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="hero-bottom-text">
+                                <span><h3>KICKSTARTER Backers enjoy more. GoChess launch soon to come!</h3></span>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="button">
+                                <button>Get notified</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </body>
